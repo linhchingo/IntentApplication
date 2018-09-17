@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImplicitlyActivity"
+    android:weightSum="6">
+
+    <Button
+        android:id="@+id/btnCallBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CallBrowser" />
+
+    <Button
+        android:id="@+id/btnSendmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Send Message" />
+
+    <Button
+        android:id="@+id/btnViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="View Contact" />
+
+    <Button
+        android:id="@+id/btnCallSomeOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Call Some One" />
+
+    <Button
+        android:id="@+id/btnEditContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Edit Contact" />
+
+    <Button
+        android:id="@+id/btnOpenGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Open Gallery" />
+</LinearLayout>
