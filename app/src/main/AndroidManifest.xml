@@ -5,6 +5,8 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,15 +23,46 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartForResultActivity"></activity>
+        <activity android:name=".StartForResultActivity" />
         <activity android:name=".ChildStartForResult" />
-        <activity android:name=".FilterActivity">
-            <intent-filter tools:ignore="AppLinkUrlError" android:icon="@android:drawable/ic_input_add" android:label="My Brower">
-                <action android:name="android.intent.action.VIEW"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-                <data android:scheme="https"></data>
+        <activity android:name=".FilterActivity"
+            android:permission="android.permission.BROADCAST_SMS">
+             <intent-filter
+                 android:icon="@android:drawable/ic_input_add"
+                 android:label="My Brower"
+                 tools:ignore="AppLinkUrlError">
+                 <action android:name="android.intent.action.VIEW" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <data android:scheme="https" />
+             </intent-filter>
+           <!-- <intent-filter
+                android:icon="@android:drawable/ic_input_add"
+                android:label="My Brower"
+                tools:ignore="AppLinkUrlError" >
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+            </intent-filter>-->
+            <intent-filter
+                android:icon="@android:drawable/ic_input_add"
+                android:label="My Brower"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tel" />
+            </intent-filter>
+
+            <intent-filter
+                android:icon="@android:drawable/ic_input_add"
+                android:label="My Brower"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>

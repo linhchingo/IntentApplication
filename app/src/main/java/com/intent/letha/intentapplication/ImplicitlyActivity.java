@@ -77,7 +77,7 @@ public class ImplicitlyActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.btnOpenGallery:
                 intent.setAction(Intent.ACTION_PICK);
-//                intent.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//               intent.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 intent.setType("image/*");
                 startActivity(intent);
                 break;
